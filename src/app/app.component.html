@@ -1,0 +1,29 @@
+<div *ngIf="of">
+    <h1>of</h1>
+    <strong>Nos permite crear Observables a partir de arrays, objetos, strings etc. El Observable emitirá cada argumento 
+  que reciba de manera individual, y después será completado</strong>
+    <p>Observable fruits-> {{varOf}}</p>
+    <p>Observable number-> {{varOf2}}</p>
+</div>
+
+<div *ngIf="from">
+    <h1>from</h1>
+    <strong>from() nos permite crear Observables a partir de arrays, promesas, objetos, strings etc.
+       Suena bastante parecido a of().  from() emite los elementos contenidos dentro del array, mientras que of() emite el array entero. Podríamos decir que from() tiene un efecto de flattening o ‘aplanamiento’: coge un array,
+        string u objeto y lo ‘aplana’, emitiendo los elementos que contiene</strong>
+    <p>Observable fruits-> {{varOf}}</p>
+    <p>Observable number-> {{varOf2}}</p>
+</div>
+
+<div *ngIf="fromEvent">
+    <h1>fromEvent</h1>
+    <strong>podemos crear Observables que emiten cuando se disparan estos eventos. fromEvent() recibe dos parámetros diferentes:
+      El target de evento al que se añadirá la función de manejo de eventos, es decir, el elemento al que vamos a ‘escuchar’ por si se produce un evento o no.
+      El tipo de evento al que queremos ‘escuchar’.</strong>
+</div>
+
+
+<div *ngIf="interval">
+    <h1>interval</h1>
+    <strong> crea un Observable que emite una secuencia ascendente de números, con el intervalo entre emisiones que especifiquemos.</strong> {{varOf}}
+</div>
